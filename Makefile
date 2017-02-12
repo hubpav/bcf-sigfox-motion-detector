@@ -1,14 +1,15 @@
+SDK_DIR ?= sdk
+
 -include sdk/Makefile.mk
 
 .PHONY: all
-all: sdk debug
+all: sdk
+	@$(MAKE) -s debug
 
 .PHONY: sdk
 sdk:
-	@if [ ! -f sdk/Makefile.mk ]; then \
-		echo "Initializing git submodules..."; \
-		git submodule update --init; \
-	fi
+	@if [ ! -f $(SDK_DIR)/Makefile.mk ]; then echo "Initializing Git submodules..."; git submodule update --init; fi
 
-update:
-	$(Q)git submodule update --remote --merge
+.PHONY: update
+update: sdk
+	@echo "Updating Git submodules..."; git submodule update --remote --merge
