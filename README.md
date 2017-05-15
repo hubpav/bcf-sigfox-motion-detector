@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/github/license/bigclownlabs/bcp-sigfox-motion-detector.svg)](https://github.com/bigclownlabs/bcp-sigfox-motion-detector/blob/master/LICENSE)
 [![Twitter](https://img.shields.io/twitter/follow/BigClownLabs.svg?style=social&label=Follow)](https://twitter.com/BigClownLabs)
 
-This repository contains firmware for Sigfox environmental sensor.
+This repository contains firmware for Sigfox motion detector based on PIR sensor.
 Firmware is programmed into [Core Module](https://shop.bigclown.com/products/core-module).
 Binary version is available in section [Releases](https://github.com/bigclownlabs/bcp-sigfox-motion-detector/releases).
 
@@ -22,7 +22,6 @@ Sigfox Motion Detector is a battery-operated indoor device integrating digital P
 This device is able to run from two AAA Alkaline batteries for at least 1 year.
 It reports motion event to Sigfox network.
 The minimum report period for the motion event is 15 minutes.
-Other reported events are press of the button on Core Module
 You can route this event as HTTP POST request with JSON body to your own web app via [MySigfox](https://www.mysigfox.com) service.
 
 ## Hardware
