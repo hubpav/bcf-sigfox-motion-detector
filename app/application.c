@@ -71,7 +71,7 @@ void pir_module_event_handler(bc_module_pir_t *self, bc_module_pir_event_t event
         {
             tick_cooldown = tick_now + PIR_COOLDOWN_SECONDS * 1000;
 
-            bc_scheduler_register(transmit_motion_task, NULL, BC_TICK_INFINITY);
+            bc_scheduler_register(transmit_motion_task, NULL, 0);
 
             motion_transmission_active = true;
         }
@@ -105,6 +105,8 @@ void sigfox_module_event_handler(bc_module_sigfox_t *self, bc_module_sigfox_even
     else if (event == BC_MODULE_SIGFOX_EVENT_SEND_RF_FRAME_DONE)
     {
         bc_led_set_mode(&led, BC_LED_MODE_OFF);
+
+        motion_transmission_active = false;
     }
 }
 
