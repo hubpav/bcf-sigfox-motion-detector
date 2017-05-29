@@ -30,8 +30,8 @@ You can route this event as HTTP POST request with JSON body to your own web app
 The following hardware components are used for this project:
 
 * **[PIR Module](https://shop.bigclown.com/products/pir-module)**
-* **[Sigfox Module](https://shop.bigclown.com/products/sigfox-module)**
 * **[Core Module](https://shop.bigclown.com/products/core-module)**
+* **[Sigfox Module](https://shop.bigclown.com/products/sigfox-module)**
 * **[Mini Battery Module](https://shop.bigclown.com/products/mini-battery-module)**
 
 ## License
