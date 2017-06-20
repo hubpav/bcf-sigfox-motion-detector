@@ -1,6 +1,6 @@
 <a href="https://www.bigclown.com"><img src="https://s3.eu-central-1.amazonaws.com/bigclown/gh-readme-logo.png" alt="BigClown Logo" align="right"></a>
 
-# Project Sigfox Motion Detector
+# Firmware for BigClown Sigfox Motion Detector
 
 [![Travis](https://img.shields.io/travis/bigclownlabs/bcp-sigfox-motion-detector/master.svg)](https://travis-ci.org/bigclownlabs/bcp-sigfox-motion-detector)
 [![Release](https://img.shields.io/github/release/bigclownlabs/bcp-sigfox-motion-detector.svg)](https://github.com/bigclownlabs/bcp-sigfox-motion-detector/releases)
