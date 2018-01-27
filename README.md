@@ -10,7 +10,7 @@
 ![Photo of Sigfox Motion Detector assembly](doc/sigfox-motion-detector-enclosures.png)
 
 This repository contains firmware for Sigfox Motion Detector based on PIR Module.
-Firmware is programmed into [Core Module](https://shop.bigclown.com/products/core-module).
+Firmware is programmed into [Core Module](https://shop.bigclown.com/core-module).
 Binary version is available in section [Releases](https://github.com/bigclownlabs/bcp-sigfox-motion-detector/releases).
 
 > Detailed information about this project can be found in [BigClown Documentation](https://doc.bigclown.com).
@@ -29,10 +29,10 @@ You can route this event as HTTP POST request with JSON body to your own web app
 
 The following hardware components are used for this project:
 
-* **[PIR Module](https://shop.bigclown.com/products/pir-module)**
-* **[Core Module](https://shop.bigclown.com/products/core-module)**
-* **[Sigfox Module](https://shop.bigclown.com/products/sigfox-module)**
-* **[Mini Battery Module](https://shop.bigclown.com/products/mini-battery-module)**
+* **[PIR Module](https://shop.bigclown.com/pir-module)**
+* **[Core Module](https://shop.bigclown.com/core-module)**
+* **[Sigfox Module](https://shop.bigclown.com/sigfox-module)**
+* **[Mini Battery Module](https://shop.bigclown.com/mini-battery-module)**
 
 ## License
 
