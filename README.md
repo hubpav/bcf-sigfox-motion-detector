@@ -2,16 +2,16 @@
 
 # Firmware for BigClown Sigfox Motion Detector
 
-[![Travis](https://img.shields.io/travis/bigclownlabs/bcp-sigfox-motion-detector/master.svg)](https://travis-ci.org/bigclownlabs/bcp-sigfox-motion-detector)
-[![Release](https://img.shields.io/github/release/bigclownlabs/bcp-sigfox-motion-detector.svg)](https://github.com/bigclownlabs/bcp-sigfox-motion-detector/releases)
-[![License](https://img.shields.io/github/license/bigclownlabs/bcp-sigfox-motion-detector.svg)](https://github.com/bigclownlabs/bcp-sigfox-motion-detector/blob/master/LICENSE)
+[![Travis](https://img.shields.io/travis/bigclownlabs/bcf-kit-sigfox-motion-detector/master.svg)](https://travis-ci.org/bigclownlabs/bcf-kit-sigfox-motion-detector)
+[![Release](https://img.shields.io/github/release/bigclownlabs/bcf-kit-sigfox-motion-detector.svg)](https://github.com/bigclownlabs/bcf-kit-sigfox-motion-detector/releases)
+[![License](https://img.shields.io/github/license/bigclownlabs/bcf-kit-sigfox-motion-detector.svg)](https://github.com/bigclownlabs/bcf-kit-sigfox-motion-detector/blob/master/LICENSE)
 [![Twitter](https://img.shields.io/twitter/follow/BigClownLabs.svg?style=social&label=Follow)](https://twitter.com/BigClownLabs)
 
 ![Photo of Sigfox Motion Detector assembly](doc/sigfox-motion-detector-enclosures.png)
 
 This repository contains firmware for Sigfox Motion Detector based on PIR Module.
 Firmware is programmed into [Core Module](https://shop.bigclown.com/core-module).
-Binary version is available in section [Releases](https://github.com/bigclownlabs/bcp-sigfox-motion-detector/releases).
+Binary version is available in section [Releases](https://github.com/bigclownlabs/bcf-kit-sigfox-motion-detector/releases).
 
 > Detailed information about this project can be found in [BigClown Documentation](https://doc.bigclown.com).
 
