@@ -25,17 +25,9 @@ bc_scheduler_task_id_t transmit_alert_temperature_task_id;
 bool alert = false;
 bool boot_send = false;
 uint16_t count = 0;
-bc_tick_t send_alert_tick = 0;
-bc_tick_t pir_evet_tick = 0;
+uint16_t sent_count = 0;
 float temperature_alert = NAN;
 float temperature_previous = NAN;
-
-void plan_transmit_alert_motion_task(void)
-{
-    bc_tick_t min_tick = send_alert_tick > pir_evet_tick ? pir_evet_tick : send_alert_tick;
-
-    bc_scheduler_plan_absolute(transmit_alert_motion_task_id, min_tick + ALERT_INTERVAL);
-}
 
 void tmp112_event_handler(bc_tmp112_t *self, bc_tmp112_event_t event, void *event_param)
 {
@@ -115,10 +107,6 @@ void pir_event_handler(bc_module_pir_t *self, bc_module_pir_event_t event, void 
         bc_led_pulse(&led, 50);
 
         count++;
-
-        pir_evet_tick = bc_tick_get();
-
-        plan_transmit_alert_motion_task();
 
         if (!alert)
         {
@@ -234,9 +222,7 @@ void transmit_alert_motion_task(void *param)
 
     bc_module_sigfox_send_rf_frame(&sigfox_module, buffer, sizeof(buffer));
 
-    send_alert_tick = bc_tick_get();
-
-    if (count == 0)
+    if (count == sent_count)
     {
         alert = false;
 
@@ -244,11 +230,10 @@ void transmit_alert_motion_task(void *param)
     }
     else
     {
-        //bc_scheduler_plan_current_relative(ALERT_INTERVAL);
-        plan_transmit_alert_motion_task();
+        bc_scheduler_plan_current_relative(ALERT_INTERVAL);
     }
 
-    count = 0;
+    sent_count = count;
 }
 
 void transmit_alert_temperature_task(void *param)
