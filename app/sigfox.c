@@ -11,9 +11,9 @@ uint8_t sigfox_temperature_to_uint8(float temperature)
     {
         temperature = -28;
     }
-    else if (temperature > 100)
+    else if (temperature > 99)
     {
-        temperature = 100;
+        temperature = 99;
     }
 
     return (temperature + 28) * 2;
@@ -21,14 +21,14 @@ uint8_t sigfox_temperature_to_uint8(float temperature)
 
 uint8_t sigfox_voltage_to_uint8(float voltage)
 {
-        if (voltage < 1.8)
+    if (voltage < 2.f)
     {
-        voltage = 1.8;
+        voltage = 2.f;
     }
-    else if (voltage > 3.8)
+    else if (voltage > 6.f)
     {
-        voltage = 3.8;
+        voltage = 6.f;
     }
 
-    return (voltage - 1.8f) * 8;
+    return (voltage - 2.f) * 4;
 }

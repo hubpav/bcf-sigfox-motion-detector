@@ -8,6 +8,7 @@ enum {
     SIGFOX_HEADER_BEACON = 0x01,
     SIGFOX_HEADER_ALERT_MOTION = 0x02,
     SIGFOX_HEADER_ALERT_TEMPERATURE = 0x03,
+    SIGFOX_HEADER_ALERT_ACCELEROMETER = 0x04
 };
 
 uint8_t sigfox_temperature_to_uint8(float temperature);
