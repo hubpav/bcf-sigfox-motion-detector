@@ -1,1 +1,6 @@
 
+assembly:
+  - name: BigClown PIR Module
+  - name: BigClown Sigfox Module
+  - name: BigClown Core Module
+  - name: BigClown Mini Battery Module
