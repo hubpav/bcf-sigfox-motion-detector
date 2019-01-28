@@ -294,7 +294,7 @@ void application_init(void)
     bc_tmp112_set_update_interval(&thermometer, THERMOMETER_UPDATE_INTERVAL);
 
     // Initialize  battery
-    bc_module_battery_init(BC_MODULE_BATTERY_FORMAT_MINI);
+    bc_module_battery_init();
     bc_module_battery_set_event_handler(battery_event_handler, NULL);
     battery_measure_task_id = bc_scheduler_register(battery_measure_task, NULL, 2020);
 
