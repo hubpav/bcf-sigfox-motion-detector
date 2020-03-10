@@ -1,6 +1,6 @@
 
 assembly:
-  - name: BigClown PIR Module
-  - name: BigClown Sigfox Module
-  - name: BigClown Core Module
-  - name: BigClown Mini Battery Module
+  - name: HARDWARIO PIR Module
+  - name: HARDWARIO Sigfox Module
+  - name: HARDWARIO Core Module
+  - name: HARDWARIO Mini Battery Module
